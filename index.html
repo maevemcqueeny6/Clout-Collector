@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>Crystal Math</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Crystal Collector</h1>
+        </div>
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+            total core.</p>
+        <p>You win the game by matching your total score to a random number, you lose the game if your total score goes
+            above the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change values of each crystal.</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" id="computerchoice-text">Computer Choice: </div>
+            <div class="col-md-3" id="wins-text">Wins</div>
+            <div class="col-md-3" id="losses-text">Losses</div>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary ruby">Ruby</button>
+            <button type="button" class="btn btn-primary diamond">Diamond</button>
+            <button type="button" class="btn btn-primary cyan">Cyan</button>
+            <button type="button" class="btn btn-primary emerald">Emerald</button>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" id="userScore-text"></div>
+            </div>
+        
+        <div class="container">
+            <div class="row">
+                <p id="result-text">Your total Score is: </p>
+            </div>
+        </div>
+
+<script>
+    $("document").ready(function () {
+
+
+
+var wins = 0;
+var losses = 0;
+var result=0;
+var computerGuess;
+var rubyvalue;
+var diamondvalue;
+var emeraldvalue;
+var cyanvalue;
+console.log(computerGuess);
+
+function newRound() {
+    computerGuess = Math.floor(Math.random() * 120) + 19;
+    // $("#computerchoice-text").after(computerGuess);
+    console.log(computerGuess);
+    // $("#computer-choicetext").append(computerGuess);
+    rubyvalue=Math.floor(Math.random() * 12) + 1;
+    diamondvalue=Math.floor(Math.random() * 12) + 1;
+    emeraldvalue=Math.floor(Math.random() * 12) + 1;
+    cyanvalue=Math.floor(Math.random() * 12) + 1;
+}
+
+newRound();
+$("#computer-choicetext").append(computerGuess);
+
+
+$(".emerald").click(function(){
+    result= parseInt(result)+parseInt(emeraldvalue);
+    console.log(emeraldvalue);
+    console.log(result);
+})
+
+$(".diamond").click(function(){
+    result= parseInt(result)+parseInt(diamondvalue);
+    console.log(diamondvalue);
+    console.log(result);
+})
+
+$(".ruby").click(function(){
+    result= parseInt(result)+parseInt(rubyvalue);
+    console.log(rubyvalue);
+    console.log(result);
+})
+
+$(".cyan").click(function(){
+    result= parseInt(result)+parseInt(cyanvalue);
+    console.log(cyanvalue);
+    console.log(result);
+})
+
+
+
+$("#result-text").text(result);
+$("#computerchoice-text").append(computerGuess);
+
+})
+</script>
+
+<!-- <script src="assets/javascript/game.js"></script> -->
+
+</body>
+
+</html>

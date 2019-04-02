@@ -1,0 +1,16 @@
+.page-header {
+    background-color: lightblue;
+    font-weight: bold;
+}
+
+#computerchoice-text{
+    background-color: green;
+}
+
+#score-text{
+    background-color: lightcyan;
+}
+
+.btn-group {
+    padding: 10px 10px 10px 0px;
+}
