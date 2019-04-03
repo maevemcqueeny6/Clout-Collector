@@ -31,9 +31,9 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-6" id="computerchoice-text">Computer Choice: </div>
-            <div class="col-md-3" id="wins-text">Wins</div>
-            <div class="col-md-3" id="losses-text">Losses</div>
+            <div class="col-md-6" id="computer-choicetext">Computer Choice: </div>
+            <div class="col-md-3" id="wins-text">Wins: </div>
+            <div class="col-md-3" id="losses-text">Losses: </div>
         </div>
         <div class="btn-group">
             <button type="button" class="btn btn-primary ruby">Ruby</button>
@@ -48,7 +48,8 @@
         
         <div class="container">
             <div class="row">
-                <p id="result-text">Your total Score is: </p>
+                <p>Your total Score is:</p>
+                <p id="result-text"></p>
             </div>
         </div>
 
@@ -65,6 +66,7 @@ var rubyvalue;
 var diamondvalue;
 var emeraldvalue;
 var cyanvalue;
+var gamewon = false;
 console.log(computerGuess);
 
 function newRound() {
@@ -76,40 +78,64 @@ function newRound() {
     diamondvalue=Math.floor(Math.random() * 12) + 1;
     emeraldvalue=Math.floor(Math.random() * 12) + 1;
     cyanvalue=Math.floor(Math.random() * 12) + 1;
+    $("#computer-choicetext").text(computerGuess);
+}
+
+function check(){
+    if (computerGuess === result){
+    alert("You win!");
+     wins++;
+     $("#wins-text").text("Wins: " + wins);
+    newRound();
+}
+else if (result > computerGuess){
+    alert("You lose!");
+     losses++;
+     $("#losses-text").text("Losses: " + losses);
+    newRound();
+}
 }
 
 newRound();
-$("#computer-choicetext").append(computerGuess);
 
 
 $(".emerald").click(function(){
     result= parseInt(result)+parseInt(emeraldvalue);
     console.log(emeraldvalue);
     console.log(result);
+    $("#result-text").html(result);
+    check();
 })
 
 $(".diamond").click(function(){
     result= parseInt(result)+parseInt(diamondvalue);
     console.log(diamondvalue);
     console.log(result);
+    $("#result-text").html(result);
+    check();
 })
 
 $(".ruby").click(function(){
     result= parseInt(result)+parseInt(rubyvalue);
     console.log(rubyvalue);
     console.log(result);
+    $("#result-text").html(result);
+    check();
 })
 
 $(".cyan").click(function(){
     result= parseInt(result)+parseInt(cyanvalue);
     console.log(cyanvalue);
     console.log(result);
+    $("#result-text").html(result);
+    check();
 })
 
 
+$("#result-text").append(result);
 
-$("#result-text").text(result);
-$("#computerchoice-text").append(computerGuess);
+
+
 
 })
 </script>
