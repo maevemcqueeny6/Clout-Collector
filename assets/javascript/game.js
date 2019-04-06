@@ -21,7 +21,7 @@ $("document").ready(function () {
         emeraldvalue=Math.floor(Math.random() * 12) + 1;
         cyanvalue=Math.floor(Math.random() * 12) + 1;
         result=0;
-        $("#computer-choicetext").text(computerGuess);
+        $("#computer-choicetext").text("Computer Guess " + computerGuess);
         $("#result-text").empty();
     }
     
