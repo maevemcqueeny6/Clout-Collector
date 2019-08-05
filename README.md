@@ -1,36 +1,25 @@
-# unit-4-game
+Clout Collector 
 
-### Option One: CrystalsCollector Game (Recommended)
+Clout is defined as influence or power in political and community circles. Originally popularized by Chicago journalist Mike Royko to describe local movers and shakers when Richard J. Daley was mayor in the Sixties
+and early Seventies, but since approprby Hollywood and influencers, includinKardashian clan.
+            
+Kris Jenner, matriarch of the Kardasand literal progenitor of fame and foris the Queen of Clout.
+Kylie Jenners big pregnancy reveal ledrise in revenue for the clan and gaveto the popular
+phrase, "The Devil works hard butJenner works harder."
 
-![Crystal Collector](Images/1-CrystalCollector.jpg)
+Thus sets the stage for the Kardashian Collector Game.
 
-1. [Watch the demo](https://youtu.be/yNI0l2FMeCk).
+Fame is fickle, what gains notoriety onis devalued the next (like work ethifit tea). As such,
+you will be given a random number astart of the game.
+      
+There are four cloutable stimuli beloclicking on an image you will add a spe(but unbeknownst to
+you) amount of points to your
+total core.
 
-2. The player will have to guess the answer, just like in Word Guess. This time, though, the player will guess with numbers instead of letters. 
+You win the game by matching your score to a random number, you lose theif your total score goes
+above the random number, because therthin line between fame and notoriety.
 
-3. Here's how the app works:
+The value of each image is hidden frountil you click on it.
 
-   * There will be four crystals displayed as buttons on the page.
-
-   * The player will be shown a random number at the start of the game.
-
-   * When the player clicks on a crystal, it will add a specific amount of points to the player's total score. 
-
-     * Your game will hide this amount until the player clicks a crystal.
-     * When they do click one, update the player's score counter.
-
-   * The player wins if their total score matches the random number from the beginning of the game.
-
-   * The player loses if their score goes above the random number.
-
-   * The game restarts whenever the player wins or loses.
-
-     * When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
-
-   * The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
-
-##### Option 1 Game design notes
-
-* The random number shown at the start of the game should be between 19 - 120.
-
-* Each crystal should have a random hidden value between 1 - 12.
+Each time when the game starts, thewill change values of each object wit"cloutable" value to
+fame and fortune.
