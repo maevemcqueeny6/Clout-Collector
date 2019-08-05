@@ -1,6 +1,20 @@
+body{
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+
+.text{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .page-header {
-    background-color: lightblue;
-    font-weight: bold;
+    padding: 60px;
+  text-align: center;
+  background: #c95eb2;
+  color: white;
+  font-size: 30px;
 }
 
 #computerchoice-text{
@@ -11,7 +25,23 @@
     background-color: lightcyan;
 }
 
-.btn-group {
-    padding: 10px 10px 10px 0px;
+
+img{
+    height: 250px;
+    width: 200px;
+} 
+
+.captioncontainer{
+    width: 200px;
 }
 
+.buttons{
+    margin-left: 200px;
+}
+
+
+
+.gamecontainer{
+    margin-left: 150px;
+    padding: 10px;
+} 

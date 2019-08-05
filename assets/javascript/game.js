@@ -21,7 +21,7 @@ $("document").ready(function () {
         emeraldvalue=Math.floor(Math.random() * 12) + 1;
         cyanvalue=Math.floor(Math.random() * 12) + 1;
         result=0;
-        $("#computer-choicetext").text("Computer Guess " + computerGuess);
+        $("#computer-choicetext").text("Clout Calculator " + computerGuess);
         $("#result-text").empty();
     }
     
@@ -31,13 +31,13 @@ $("document").ready(function () {
         if (computerGuess === result){
         alert("You win!");
          wins++;
-         $("#wins-text").text("Wins: " + wins);
+         $("#wins-text").text("Fame: " + wins);
         newRound();
     }
     else if (result > computerGuess){
         alert("You lose!");
          losses++;
-         $("#losses-text").text("Losses: " + losses);
+         $("#losses-text").text("Infamy: " + losses);
         newRound();
     }
     }

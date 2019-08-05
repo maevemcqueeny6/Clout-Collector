@@ -13,48 +13,88 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <title>Crystal Math</title>
+    <title>Clout Collector</title>
 </head>
 
 <body>
     <div class="container">
         <div class="page-header">
-            <h1>Crystal Collector</h1>
+            <h1>Clout Collector</h1>
         </div>
-        <p>You will be given a random number at the start of the game.</p>
-        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
-            total core.</p>
-        <p>You win the game by matching your total score to a random number, you lose the game if your total score goes
-            above the random number.</p>
-        <p>The value of each crystal is hidden from you until you click on it.</p>
-        <p>Each time when the game starts, the game will change values of each crystal.</p>
+        <div class="text">
+            Clout is defined as influence or power in political and community circles. Originally popularized by Chicago
+            journalist Mike Royko to describe local movers and shakers when Richard J. Daley was mayor in the Sixties
+            and early Seventies, but since appropriated by Hollywood and influencers, including the Kardashian clan.
+            <br><br>
+            Kris Jenner, matriarch of the Kardashains and literal progenitor of fame and fortune, is the Queen of Clout.
+            Kylie Jenners big pregnancy reveal led to a rise in revenue for the clan and gave rise to the popular
+            phrase, "The Devil works hard but Kris Jenner works harder."
+            <br><br>
+            Thus sets the stage for the Kardashian Clout Collector Game.
+            <br><br>
+            Fame is fickle, what gains notoriety one day is devalued the next (like work ethic, or fit tea). As such,
+            you will be given a random number at the start of the game.
+            <br><br>
+            There are four cloutable stimuli below. By clicking on an image you will add a specific (but unbeknownst to
+            you) amount of points to your
+            total core.
+            <br><br>
+            You win the game by matching your total score to a random number, you lose the game if your total score goes
+            above the random number, because there's a thin line between fame and notoriety.
+            <br><br>
+            The value of each image is hidden from you until you click on it.
+            <br><br>
+            Each time when the game starts, the game will change values of each object with its "cloutable" value to
+            fame and fortune.
+        </div>
     </div>
-    <div class="container">
+    <div class="gamecontainer">
         <div class="row">
-            <div class="col-md-6" id="computer-choicetext">Computer Choice: </div>
-            <div class="col-md-3" id="wins-text">Wins: </div>
-            <div class="col-md-3" id="losses-text">Losses: </div>
+            <div id="computer-choicetext">Todays Clout Calculator: </div>
+            <div id="wins-text">Wins: </div>
+            <div id="losses-text">Losses: </div>
         </div>
-        <div class="btn-group">
-            <button type="button" class="btn btn-primary ruby">Ruby</button>
-            <button type="button" class="btn btn-primary diamond">Diamond</button>
-            <button type="button" class="btn btn-primary cyan">Cyan</button>
-            <button type="button" class="btn btn-primary emerald">Emerald</button>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6" id="userScore-text"></div>
+    </div>
+    <div class="buttons">
+
+        <button class="cyan">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/51ikuYsOn%2BL._SX332_BO1,204,203,200_.jpg" />
+            <div class="captioncontainer">
+                <p>Release a book</p>
             </div>
-        
-        <div class="container">
-            <div class="row">
+        </button>
+        <button class="emerald">
+            <img src="https://cdn-img.instyle.com/sites/default/files/images/2018/08/kylie-jenner-stormi-lead.jpg" />
+            <div class="captioncontainer">
+                <p>Release a baby</p>
+            </div>
+        </button>
+        <button class="ruby">
+            <img
+                src="https://s2.r29static.com//bin/entry/69c/720x864,85/2176581/kim-kardashians-met-gala-dress-2176581.webp" />
+            <div class="captioncontainer">
+                <p>Release a sex tape</p>
+            </div>
+        </button>
+        <button class="diamond">
+            <img src="https://i.dailymail.co.uk/i/pix/2011/09/17/article-0-0DF3614C00000578-465_634x800.jpg" />
+            <div class="captioncontainer">
+                <p>Release a husband</p>
+            </div>
+        </button>
+
+        <div class="row">
                 <p>Your total Score is:</p>
                 <p id="result-text"></p>
             </div>
-        </div>
+    </div>
 
 
-<script src="assets/javascript/game.js"></script>
+
+    
+
+
+    <script src="assets/javascript/game.js"></script>
 
 </body>
 
