@@ -42,6 +42,11 @@ img{
 
 
 .gamecontainer{
-    margin-left: 150px;
+    margin-left: 210px;
     padding: 10px;
 } 
+
+.score{
+    float:right;
+    margin-right: 400px;
+}
