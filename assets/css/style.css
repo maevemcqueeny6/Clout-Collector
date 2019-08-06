@@ -5,16 +5,21 @@ body{
 }
 
 .text{
-    padding: 10px;
+    padding: 10px 70px 10px 70px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.page-header {
-    padding: 60px;
-  text-align: center;
-  background: #c95eb2;
-  color: white;
-  font-size: 30px;
+#header {
+    padding: 10px;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    /* margin-bottom: 10px; */
+  text-align: left;
+  background: black;
+  color: red;
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #computerchoice-text{
@@ -23,6 +28,10 @@ body{
 
 #score-text{
     background-color: lightcyan;
+}
+
+.rows{
+    column-count: 2;
 }
 
 
@@ -37,12 +46,13 @@ img{
 
 .buttons{
     margin-left: 200px;
+    margin-top: 50px;
 }
 
 
 
 .gamecontainer{
-    margin-left: 210px;
+    margin-left: 100px;
     padding: 10px;
 } 
 
